@@ -1,0 +1,27 @@
+generated: '2026-07-21'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: www.stel.life
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Aug 31 05:06:18 2026 GMT
+  hsts: true
+  hsts_max_age: 15552000
+- host: manage.stelhealth.com
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Mar  4 23:59:59 2027 GMT
+  hsts: false
+domains:
+- domain: stel.life
+  dnssec: false
+  caa: []
+  spf: true
+  dmarc: true
+  dmarc_policy: none
+- domain: stelhealth.com
+  dnssec: false
+  caa: []
+  spf: true
+  dmarc: false
